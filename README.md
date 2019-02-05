@@ -10,6 +10,8 @@ Go to downloaded folder
 
 npm install
 
+chmod +x start_message_scheduler.sh
+
 sh start_message_scheduler.sh
 
 ## Configurations :
