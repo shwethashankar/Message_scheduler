@@ -1,4 +1,4 @@
-# Message_scheduler
+# Message Scheduler
 Module which schedules printing of message at given time.
 
 API accepts time in 24hr format
