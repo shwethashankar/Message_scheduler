@@ -37,12 +37,7 @@ techjiniController.printMessage =  async function(req, res, next) {
   var currentDate = moment(new Date (), 'MM/DD/YYYY H:mm'); 
   var scheduleddate = moment(scheduledTime,'H:mm');
 
-  
-
-  console.log("time given ", currentDate ,scheduleddate);
-  var timediff = scheduleddate.diff(currentDate,"second");
-  
-  console.log("time diff in hours ", timediff)
+ var timediff = scheduleddate.diff(currentDate,"second");
   if(timediff < 0){
     res.status(400);
     res.end();
