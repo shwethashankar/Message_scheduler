@@ -1,6 +1,6 @@
 "use strict";
 /*
-Function to  push message to specified channel
+Function to  print message as per given time
 
 */
 var techjiniController = {};
