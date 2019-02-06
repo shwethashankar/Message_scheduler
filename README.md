@@ -1,7 +1,7 @@
 # Message Scheduler
 Module which schedules printing of message at given time.
 
-API accepts time in 24hr format
+API accepts date and time in MM/DD/YYYY HH:MM format and time is in 24 hr format
 
 ## Steps to install
 Clone/Download source files.
@@ -10,13 +10,23 @@ Go to downloaded folder
 
 npm install
 
-chmod +x start_message_scheduler.sh
+npm start
 
-sh start_message_scheduler.sh
+## Pre-requisites
+Redis v >= 4.0.9 should be installed in the server
 
 ## Configurations 
-Port to use for running the server can be specified in config file.
-Default port is 9341
+Configurations to be added in .env file
+
+SERVER_PORT = 9341
+
+REDIS_PORT = 6390
+
+REDIS_SERVER = 127.0.0.1
+
+LOG_FILE_NAME = messsageScheduler.log
+
+LOG_LEVEL = INFO
 
 ## Docs
 Once the server is running, API document can be accessed from
