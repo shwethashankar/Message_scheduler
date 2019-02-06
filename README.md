@@ -16,7 +16,7 @@ npm start
 Redis v >= 4.0.9 should be installed in the server
 
 ## Configurations 
-Configurations to be added in .env file
+Configurations to be updated in .env file
 
 SERVER_PORT = 9341
 
