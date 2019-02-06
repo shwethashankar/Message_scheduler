@@ -14,7 +14,7 @@ chmod +x start_message_scheduler.sh
 
 sh start_message_scheduler.sh
 
-## Configurations :
+## Configurations 
 Port to use for running the server can be specified in config file.
 Default port is 9341
 
