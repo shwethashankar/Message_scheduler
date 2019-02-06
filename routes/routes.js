@@ -1,13 +1,13 @@
 'use strict'
-var techjiniController = require('../controllers/techjini_controller')
+var messageController = require('../controllers/messageController')
 module.exports = function(app) {
 
         /**
  * @openapi
- * /techjini/print-message :
+ * /api/messages :
  *   post:
  *     tags: 
- *      - Techjini
+ *      - Scheduler
  *     description: Prints a message at scheduled time
  *     requestBody : 
  *       description: Message to be printed
@@ -24,7 +24,7 @@ module.exports = function(app) {
  *               
  *             example :
  *                type : "hello!!!"
- *                time : "11.30"
+ *                time : "02/06/2019 11.30"
  *                
  *     responses:
  *       202:
@@ -34,6 +34,6 @@ module.exports = function(app) {
  *         description: Missing data/ Failed scheduling message
  *  
  */
-      app.post('/techjini/print-message', techjiniController.printMessage);
+      app.post('/api/messages', messageController.printMessage);
 
   }

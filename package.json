@@ -4,7 +4,8 @@
   "description": "Service to print message on scheduled time",
   "main": "server.js",
   "scripts": {
-    "test": "test/scheduler-test.js"
+    "test": "test/scheduler-test.js",
+    "start": "node server.js"
   },
   "author": "Shwetha Shankar",
   "license": "ISC",
@@ -19,6 +20,9 @@
     "moment": "^2.24.0",
     "openapi-jsdoc": "0.0.2",
     "path": "^0.12.7",
+    "redis": "^2.8.0",
+    "redis-notifier": "^1.0.0",
+    "redis-server": "^1.2.2",
     "supertest": "^3.4.2",
     "swagger-ui-express": "^4.0.1",
     "winston": "^3.1.0",

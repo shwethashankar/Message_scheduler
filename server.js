@@ -3,15 +3,15 @@
 var bodyParser = require("body-parser");
 var express = require("express");
 var app = express();
-var dotenv = require("dotenv");
+var dotenv = require("dotenv").config();
 var http = require("http");
 var path = require("path");
 
-var config = require("./config");
+
 var logger = require("./log/logger").logger;
 var openapiJSDoc = require('openapi-jsdoc');
-var port = config.server_port_number;
-dotenv.load();
+var port = process.env.SERVER_PORT
+
 var swaggerUi = require("swagger-ui-express");
 
 var swaggerDefinition = {
@@ -20,7 +20,7 @@ var swaggerDefinition = {
     version: '1.0.0',
     description: 'Description of different API’s provided by message scheduler '
   } ,
-  servers: config.server_url
+  servers: "http://localhost:" + port
 };
 
 

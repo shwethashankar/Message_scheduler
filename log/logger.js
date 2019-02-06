@@ -1,7 +1,6 @@
 var winston = require('winston')
-var config = require('../config')
-var fileName = config.log.file
-var level = config.log.level
+var fileName = process.env.LOG_FILE_NAME
+var level = process.env.LOG_LEVEL
 
 var logger = winston.createLogger({
     level: level,
